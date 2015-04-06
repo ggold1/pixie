@@ -32,6 +32,26 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Gems for contact form.
+# Front-end {
+gem 'bootstrap-sass', '~> 2.3.2.0'
+gem 'haml-rails', '~> 0.9'
+# # }
+# # Forms, mail {
+gem 'mail_form', '~> 1.5.0.rc'
+gem 'simple_form', '~> 3.0.0.rc'
+# # }
+# # Development (Optional) {
+gem 'better_errors', group: :development
+gem 'quiet_assets', group: :development
+# # }
+# # Development Guard {
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
+# }
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
